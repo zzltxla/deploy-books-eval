@@ -1,0 +1,33 @@
+services : 
+  react: 
+    container_name: react-in-spring
+    build: 
+      context: ./src/main/react/
+      dockerfile: Dockerfile
+    depends_on: 
+     - spring
+    tty: true
+    stdin_open: true
+    restart: unless-stopped
+  spring: 
+    container_name: spring-boot-jar21
+    build: 
+      context: ./
+      dockerfile: Dockerfile 
+    ports: 
+      - 8080:8080
+    tty: true
+    stdin_open: true
+    restart: unless-stopped
+  postgres-dashboard-db:
+    container_name: dashboard-books-db
+    image: postgres:17-alpine3.21
+    environment: 
+      - PG_HOST=localhost
+      - PG_USER=user 
+      - PG_PASSWORD=
+      - PG_PORT=5432
+    ports: 
+      - 5432:5432
+
+

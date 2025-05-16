@@ -1,0 +1,5 @@
+{"properties": [{
+  "name": "deploys_books.url",
+  "type": "java.lang.String",
+  "description": "A description for 'deploys_books.url'"
+}]}

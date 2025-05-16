@@ -1,0 +1,25 @@
+{
+  "files": [],
+  "references": [
+    { "path": "./tsconfig.app.json" },
+    { "path": "./tsconfig.node.json" }
+  ],
+  "compilerOptions": {
+    "baseUrl": "./",
+    "outDir": "./dist",
+    "sourceMap": true,
+    "moduleResolution": "node",
+    "jsx": "react",
+  },
+  "build": {
+    "options": {
+      "outputPath": "./dist",
+      "index": "./index.html",
+      "main": "src/main.tsx",
+      "tsConfig": "tsconfig.app.json",
+      "styles": [
+        "src/styles/App.css"
+      ],
+    }
+  } 
+}
