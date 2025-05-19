@@ -16,6 +16,10 @@ docker compose up
 docker compose up -d
 ```
 
+Go to [http://localhost:8080](http://localhost:8080) with your browser to see the result.
+
+You can now start editing the code to add modifications to the app.
+
 ## Github Actions' workflows
 
 This Github CI works on push of a tag.
@@ -27,17 +31,12 @@ git add .
 # Commit with your message
 git commit -m "your message"
 
-# Add a version tag
+# Add a tag
 git tag x.x.x 
-# or
-git tag x.x.xrcx
+
 
 # Push to desired branch
 git push origin desired-branch
 ```
-
-Go to [http://localhost:8080](http://localhost:8080) with your browser to see the result.
-
-You can now start editing the code to add modifications to the app.
 
 This project uses [`PostgreSQL`](https://www.postgresql.org/) for the database.
