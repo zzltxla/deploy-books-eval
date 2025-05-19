@@ -5,7 +5,7 @@ services :
       context: ./src/main/react/
       dockerfile: Dockerfile
     depends_on: 
-     - spring
+      - spring
     tty: true
     stdin_open: true
     restart: unless-stopped

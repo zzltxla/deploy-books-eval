@@ -6,10 +6,6 @@
         </encoder>
     </appender>
 
-    <logger name="fr.laposte.colissimo" level="DEBUG" additivity="false">
-        <appender-ref ref="LOG_TO_CONSOLE"/>
-    </logger>
-
     <logger name="de.codecentric.boot.admin" level="INFO" additivity="false">
         <appender-ref ref="LOG_TO_CONSOLE" />
     </logger>
